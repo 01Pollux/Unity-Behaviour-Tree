@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/BTree/Editor/UI/BehaviourTreeEditor.uss?fileID=7433441132597879392&amp;guid=3a9264e2ed979bb45964dc439d41ee54&amp;type=3#BehaviourTreeEditor" />
+    <BTreeEditor.Core.BehaviourTreeSplitView fixed-pane-initial-dimension="250">
+        <ui:VisualElement name="left-side">
+            <BTreeEditor.Core.BehaviourTreeInspector />
+        </ui:VisualElement>
+        <ui:VisualElement name="right-side">
+            <BTreeEditor.Core.BehaviourTreeGraphView focusable="true" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </BTreeEditor.Core.BehaviourTreeSplitView>
+</ui:UXML>

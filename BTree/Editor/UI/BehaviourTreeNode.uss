@@ -1,0 +1,156 @@
+.node {
+    min-width: 150px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#node-border {
+    background-color: rgb(56, 56, 56);
+    border-left-color: rgb(207, 207, 207);
+    border-right-color: rgb(207, 207, 207);
+    border-top-color: rgb(207, 207, 207);
+    border-bottom-color: rgb(207, 207, 207);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#input {
+    align-items: center;
+}
+
+#output {
+    align-items: center;
+}
+
+#selection-border {
+    border-left-color: rgb(0, 165, 255);
+    border-right-color: rgb(0, 165, 255);
+    border-top-color: rgb(0, 165, 255);
+    border-bottom-color: rgb(0, 165, 255);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+:hover > #selection-border {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+:selected > #selection-border {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+:hover:selected > #selection-border {
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
+
+#divider {
+    min-height: 1px;
+    background-color: rgb(72, 72, 72);
+}
+
+.btnode-root #output {
+    background-color: rgb(248, 77, 29);
+    min-height: 20px;
+    width: 100%;
+}
+
+.btnode-root #node-icon {
+    background-image: url('project://database/Assets/Plugins/BTree/Editor/UI/icons/btnode-main.png?fileID=2800000&guid=eccc7205d7a3d8144acc7b8e8a51890e&type=3#btnode-main');
+}
+
+.btnode-action #input {
+    background-color: rgb(152, 206, 0);
+    width: 100%;
+}
+
+.btnode-action #node-icon {
+    background-image: url('project://database/Assets/Plugins/BTree/Editor/UI/icons/btnode-default.png?fileID=2800000&guid=c7b3af8c9b07daf4f9925b4316e64a4a&type=3#btnode-default');
+}
+
+.btnode-composite #input {
+    background-color: rgb(246, 174, 45);
+    width: 100%;
+}
+
+.btnode-composite #node-icon {
+    background-image: url('project://database/Assets/Plugins/BTree/Editor/UI/icons/btnode-sequence.png?fileID=2800000&guid=755d93dad1660d943a9343fd76a519a1&type=3#btnode-sequence');
+}
+
+.btnode-decorator #input {
+    background-color: rgb(137, 166, 251);
+    width: 100%;
+}
+
+.btnode-decorator #node-icon {
+    background-image: url('project://database/Assets/Plugins/BTree/Editor/UI/icons/btnode-default.png?fileID=2800000&guid=c7b3af8c9b07daf4f9925b4316e64a4a&type=3#btnode-default');
+}
+
+#node-state {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.btstate-running #node-state {
+    background-color: rgb(255, 238, 0);
+}
+
+.btstate-success #node-state {
+    background-color: rgba(0, 255, 28, 0.65);
+}
+
+.btstate-failure #node-state {
+    background-color: rgba(255, 5, 0, 0.65);
+}
+
+#node-description {
+    font-size: 10px;
+    white-space: normal;
+    max-width: 140px;
+}
+
+#title {
+    -unity-font-style: bold;
+    font-size: 14px;
+    min-height: 30px;
+}
+
+.port .input {
+    margin-top: 8px;
+    margin-bottom: -8px;
+    align-items: center;
+}

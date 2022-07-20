@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Plugins/BTree/Editor/UI/BehaviourTreeNode.uss?fileID=7433441132597879392&amp;guid=54b6440deaa418042988dd1596a346cc&amp;type=3#BehaviourTreeNode" />
+    <ui:VisualElement name="node-state" />
+    <ui:VisualElement name="node-border">
+        <ui:VisualElement name="contents">
+            <ui:VisualElement name="top" style="align-items: center;">
+                <ui:VisualElement name="input" />
+                <ui:VisualElement name="divider" class="vertical" />
+                <ui:VisualElement name="node-icon" style="-unity-background-image-tint-color: rgb(204, 194, 194); align-items: center; justify-content: flex-start; height: 30px; width: 30px; display: flex; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;" />
+                <ui:VisualElement name="title" style="display: flex; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;">
+                    <ui:Label name="title-label" text="Node" class="unity-text-element unity-label" />
+                </ui:VisualElement>
+                <ui:Label display-tooltip-when-elided="true" name="node-description" />
+                <ui:VisualElement name="divider" class="horizontal" />
+                <ui:VisualElement name="output" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="selection-border" picking-mode="Ignore" />
+</ui:UXML>
